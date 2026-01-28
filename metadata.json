@@ -1,0 +1,7 @@
+{
+  "name": "Verbal AI - Professional Voice Interviewer",
+  "description": "A high-fidelity, vertical-aware AI interview simulator using low-latency WebRTC technology to provide industry-specific practice sessions with professional feedback.",
+  "requestFramePermissions": [
+    "microphone"
+  ]
+}

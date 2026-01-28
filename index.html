@@ -1,0 +1,101 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verbal AI - Professional Voice Interviewer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;700&family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              'theme-bg': 'var(--theme-bg)',
+              'theme-accent': 'var(--theme-accent)',
+              'theme-text': 'var(--theme-text)',
+              'theme-card': 'var(--theme-card)',
+              'theme-border': 'var(--theme-border)',
+            },
+            fontFamily: {
+              sans: ['"Inter"', 'sans-serif'],
+              mono: ['"JetBrains Mono"', 'monospace'],
+              serif: ['"Playfair Display"', 'serif'],
+              'theme-heading': 'var(--theme-font-heading)',
+              'theme-body': 'var(--theme-font-body)',
+            },
+            borderRadius: {
+              'theme': 'var(--theme-radius)',
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+        :root {
+            /* Defaults - Modern Studio */
+            --theme-bg: #F8F9FA;
+            --theme-accent: #2563EB;
+            --theme-text: #0F172A;
+            --theme-card: #FFFFFF;
+            --theme-border: #E2E8F0;
+            --theme-font-heading: "Inter", sans-serif;
+            --theme-font-body: "Inter", sans-serif;
+            --theme-radius: 0.125rem;
+        }
+        body {
+            font-family: var(--theme-font-body);
+            background-color: var(--theme-bg);
+            color: var(--theme-text);
+            -webkit-font-smoothing: antialiased;
+            transition: background-color 0.5s ease, color 0.5s ease;
+        }
+        .theme-card {
+            background: var(--theme-card);
+            border: 1px solid var(--theme-border);
+            border-radius: var(--theme-radius);
+            transition: all 0.4s ease;
+        }
+        .glass-panel {
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+        }
+        .technical-label {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 10px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            opacity: 0.6;
+        }
+        input[type="range"]::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            width: 16px;
+            height: 16px;
+            background: var(--theme-accent);
+            border-radius: 50%;
+            cursor: pointer;
+            border: 2px solid white;
+            box-shadow: 0 0 0 1px var(--theme-accent);
+        }
+        ::-webkit-scrollbar { width: 6px; }
+        ::-webkit-scrollbar-track { background: var(--theme-bg); }
+        ::-webkit-scrollbar-thumb { background: var(--theme-border); border-radius: 3px; }
+    </style>
+<script type="importmap">
+{
+  "imports": {
+    "react-dom/": "https://esm.sh/react-dom@^19.2.4/",
+    "react/": "https://esm.sh/react@^19.2.4/",
+    "react": "https://esm.sh/react@^19.2.4",
+    "@google/genai": "https://esm.sh/@google/genai@^1.38.0",
+    "framer-motion": "https://esm.sh/framer-motion@^11.11.1"
+  }
+}
+</script>
+</head>
+<body>
+    <div id="root"></div>
+</body>
+</html>
